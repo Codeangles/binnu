@@ -7,3 +7,4 @@ git status
 git add src/
 // add everything
 git add .
+git commit -m "init commit" 
