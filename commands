@@ -1,0 +1,9 @@
+heroku -v
+nodemon app.js -e js,hbs
+heroku login
+git --version
+git status
+// adds source file
+git add src/
+// add everything
+git add .
