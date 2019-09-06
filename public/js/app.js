@@ -19,7 +19,7 @@ fetch('/weather?address='+location).then((response)=>{
 
         messageOne.textContent = "Temperature "+ data.temperature;
         messageTwo.textContent = "PrecipProbability "+ data.precipProbability;
-        messageThree.textContent = "Location "+ data.location;
+        messageThree.textContent = "Locationn "+ data.location;
     })
 })
 })
