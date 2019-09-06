@@ -1,10 +1,50 @@
-heroku -v
+// npm start
 nodemon app.js -e js,hbs
+
+// heroku
+heroku -v
 heroku login
+
+// git version check
 git --version
+
+//git setup
+
+  -- Step 1:
+git init
+
+  -- Step 2:
+create .gitignore file
+and add node_modules/
+
+  -- Step 3:
 git status
-// adds source file
+
+  --Step 4:
+// to add a particular folder
 git add src/
-// add everything
+// to add everything
 git add .
+
+  -- Step 5:
 git commit -m "init commit" 
+
+// Ssh generating
+ls -a -l ~/.ssh
+ssh-keygen -t rsa -b 4096 -c "kallamvenky@gmail.com"
+eval $(ssh-agent -s)
+ssh-add -k ~/.ssh/id_rsa
+
+to get key
+cat ~/.ssh/id_rsa.pub
+
+to test ssh connection to github server
+ssh -T git@github.com
+then type yes
+
+To push github
+git push -u orgin master
+
+Time to push to heroku
+heroku keys:add
+heroku create mead-weather-application
