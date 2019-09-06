@@ -28,7 +28,7 @@ git add .
 
   -- Step 5:
 git commit -m "init commit" 
-
+git push
 // Ssh generating
 ls -a -l ~/.ssh
 ssh-keygen -t rsa -b 4096 -c "kallamvenky@gmail.com"
@@ -48,3 +48,5 @@ git push -u orgin master
 Time to push to heroku
 heroku keys:add
 heroku create mead-weather-application
+git remote
+git push heroku master
